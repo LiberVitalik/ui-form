@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <!--CALENDAR FORM-->
+
     <div class="calendar-wrapper">
         <header class="month">
             <button class="prev"></button>
@@ -81,9 +84,87 @@
                     </tr>
                 </tbody>
             </table>
-
-            <button class="add-event clip">add event</button>
+            <button class="form-submit clip">Add event</button>
         </main>
+    </div>
+
+    <!--BOOKING FORM-->
+
+    <div class="booking-wrapper">
+        <header class="location-info-wrapper">
+            <section class="location-info">
+                <h4 class="clip">Hotel Relais</h4>
+
+                <div class="flex-vertical-align">
+                    <img src="img/location.png" alt="location">
+                    <span class="clip">Paris, France</span>
+                </div>
+            </section>
+        </header>
+        <form action="" class="booking-container">
+            <section class="date-booking">
+                <label for="check-in">
+                    <span class="clip">Check in</span>
+                    <input type="text"
+                           value="" name="check-in"
+                           id="check-in"
+                           class="check-in"
+                           placeholder="9 July, 2016">
+                </label>
+                <button class="check-calendar"></button>
+            </section>
+            <section class="date-booking">
+                <label for="check-out">
+                    <span class="clip">Check out</span>
+                    <input type="text"
+                           value=""
+                           name="check-out"
+                           id="check-out"
+                           class="check-out"
+                           placeholder="16 July, 2016">
+                </label>
+                <button class="check-calendar"></button>
+            </section>
+            <section class="flexible-date-wrapper">
+                <label for="flexible-date">
+                    <input type="checkbox"
+                           id="flexible-date"
+                           name="flexible-date"
+                           checked>
+                    <img src="img/mark.png" alt="mark">
+                    <span class="clip">
+                        Flexible dates
+                    </span>
+                </label>
+            </section>
+            <div class="people-count">
+                <section class="date-booking">
+                    <label for="adults">
+                        <span class="clip">Adults</span>
+                        <select name="adults" id="adults">
+                            <option value="1">1</option>
+                            <option value="2" selected>2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </label>
+                </section>
+                <section class="date-booking">
+                    <label for="children">
+                        <span class="clip">Children</span>
+                        <select name="adults" id="children">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </label>
+                </section>
+            </div>
+            <button type="submit" class="form-submit">
+                <img src="img/search.png" alt=""> <span>search rooms</span>
+            </button>
+        </form>
     </div>
 </body>
 </html>

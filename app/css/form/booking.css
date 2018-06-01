@@ -1,0 +1,149 @@
+.booking-wrapper {
+    width: 345px;
+}
+
+.booking-wrapper .location-info-wrapper {
+    height: 180px;
+    background-image: url("../../img/bgLocation.png");
+    display: flex;
+    align-items: flex-end;
+    opacity: 0.9;
+}
+
+.booking-wrapper .location-info-wrapper .location-info {
+    max-width: 300px;
+    height: 70px;
+    padding-left: 16px;
+    color: white;
+}
+
+.booking-wrapper .location-info-wrapper .location-info h4 {
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+.booking-wrapper .location-info-wrapper .location-info span {
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.booking-wrapper .location-info-wrapper .location-info img {
+    padding-left: 2px;
+}
+
+.booking-wrapper .booking-container {
+    padding: 25px;
+    color: #666;
+}
+
+.booking-wrapper .booking-container .date-booking,
+.booking-wrapper .booking-container .date-booking label {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-wrapper .booking-container .date-booking {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.booking-wrapper .booking-container .date-booking label span {
+    margin-bottom: 8px;
+}
+
+.booking-wrapper .booking-container input,
+.booking-wrapper .booking-container select {
+    max-width: 295px;
+    height: 45px;
+    border-radius: 3px;
+    padding-left: 12px;
+    padding-right: 55px;
+    font-family: GothamProRegular, Arial, sans-serif;
+    font-size: 14px;
+    border: 0;
+    box-shadow: inset -1px 1px 3px rgba(38, 27, 33, 0.25);
+}
+
+.booking-wrapper .booking-container .check-in::placeholder,
+.booking-wrapper .booking-container .check-out::placeholder {
+    font-family: GothamProLight, sans-serif;
+    font-size: 14px;
+    color: #999898;
+}
+
+.booking-wrapper .booking-container .date-booking .check-calendar {
+    display: block;
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    border: none;
+    cursor: pointer;
+    background: url("../../img/calendar.png") 50% 50% no-repeat;
+}
+
+.flexible-date-wrapper {
+    margin-bottom: 27px;
+}
+
+.flexible-date-wrapper label {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.flexible-date-wrapper label input[type='checkbox'] {
+    display: none;
+}
+
+.flexible-date-wrapper label:before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin-right: 12px;
+    box-shadow: inset -1px 1px 3px rgba(38, 27, 33, 0.25);
+    cursor: pointer;
+}
+
+.flexible-date-wrapper label span {
+    max-width: 250px;
+    font-size: 14px;
+}
+
+.flexible-date-wrapper label img {
+    width: 16px;
+    height: 11px;
+    position: absolute;
+    top: 6px;
+    left: 3px;
+    display: none;
+}
+
+.flexible-date-wrapper input[type='checkbox']:checked + img  {
+    display: block;
+}
+
+.booking-container .people-count {
+    display: flex;
+}
+
+.booking-container .people-count select {
+    width: 137px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    background: url("../../img/rectangle.png") 96px 50% no-repeat;
+}
+
+.booking-container .people-count .date-booking:first-child {
+    margin-right: 19px;
+}
+
+.booking-container .people-count .date-booking span {
+    font-size: 14px;
+}
+
+.booking-container .form-submit img {
+    margin-right: 10px;
+}

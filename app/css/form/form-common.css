@@ -1,0 +1,50 @@
+.calendar-wrapper,
+.booking-wrapper {
+    font-family: GothamProRegular, sans-serif;
+    margin: 2% auto;
+    overflow: hidden;
+    border: 1px solid #afafaf;
+    box-shadow: 0 0 21px rgba(0, 0, 0, 0.45);
+    border-radius: 5px;
+}
+
+.color-coral {
+    color: #FB6362;
+}
+
+.color-grey {
+    color: #c5c5c5;
+}
+
+.flex-vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.form-submit  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 296px;
+    height: 58px;
+    font-family: GothamProMedium, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border: 0;
+    background: #fb6362;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .45);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.form-submit:hover {
+    box-shadow: inset 0 0 60px rgba(0, 0, 0, .25);
+}
+
+.clip {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
