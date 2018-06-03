@@ -84,7 +84,7 @@
                     </tr>
                 </tbody>
             </table>
-            <button class="form-submit clip">Add event</button>
+            <button type="submit" class="form-submit clip">Add event</button>
         </main>
     </div>
 
@@ -101,7 +101,9 @@
                 </div>
             </section>
         </header>
-        <form action="" class="booking-container">
+        <form action="POST" novalidate
+              name="booking-form"
+              class="booking-container">
             <section class="date-booking">
                 <label for="check-in">
                     <span class="clip">Check in</span>
@@ -206,6 +208,30 @@
             </div>
             <div class="rectangle"></div>
         </figure>
+    </section>
+    <section class="comment-wrapper">
+        <form action="POST" novalidate
+              name="comment-form">
+            <fieldset>
+                <input type="email" name="comment-email" required
+                placeholder="Email">
+                <input type="button" name="add-email">
+            </fieldset>
+            <fieldset>
+                <input type="text" name="comment-subject" placeholder="Subject">
+                <label for="comment-file">
+                    <input type="file" id="comment-file" name="comment-file">
+                </label>
+            </fieldset>
+            <fieldset>
+                <textarea name="comment-message"
+                          id="comment-message"
+                          placeholder="Message"></textarea>
+            </fieldset>
+            <fieldset>
+                <button type="submit" class="form-submit clip">Send</button>
+            </fieldset>
+        </form>
     </section>
 </body>
 </html>

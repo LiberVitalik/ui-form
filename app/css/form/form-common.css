@@ -1,6 +1,7 @@
 .calendar-wrapper,
 .booking-wrapper,
-.places-wrapper {
+.places-wrapper,
+.comment-wrapper {
     font-family: GothamProRegular, sans-serif;
     margin: 2% auto;
     overflow: hidden;
