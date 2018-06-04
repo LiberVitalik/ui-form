@@ -1,0 +1,122 @@
+.schedule-wrapper {
+    width: 790px;
+    height: 340px;
+    font-family: GothamProMedium, Arial, sans-serif;
+    font-size: 12px;
+    position: relative;
+    color: #666;
+}
+
+.schedule-wrapper .schedule {
+    height: 336px;
+    position: absolute;
+    top: 0;
+    left: 103px;
+    display: flex;
+}
+
+.schedule-wrapper span {
+    display: block;
+    padding: 51px 0 4px 40px;
+}
+
+.schedule-wrapper hr {
+    width: 705px;
+    margin: 0 auto;
+    border: 1px solid #eaeaea;
+}
+
+.schedule-wrapper .monday,
+.schedule-wrapper .tuesday,
+.schedule-wrapper .wednesday,
+.schedule-wrapper .thursday,
+.schedule-wrapper .friday,
+.schedule-wrapper .saturday,
+.schedule-wrapper .sunday {
+    width: 55px;
+    padding-right: 35px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.schedule-wrapper .monday span,
+.schedule-wrapper .tuesday span,
+.schedule-wrapper .wednesday span,
+.schedule-wrapper .thursday span,
+.schedule-wrapper .friday span,
+.schedule-wrapper .saturday span,
+.schedule-wrapper .sunday span{
+    padding: 8px 10px 40px 10px;
+    text-align: center;
+}
+
+.schedule-wrapper .monday .monday-schedule,
+.schedule-wrapper .tuesday .tuesday-schedule,
+.schedule-wrapper .wednesday .wednesday-schedule,
+.schedule-wrapper .thursday .thursday-schedule,
+.schedule-wrapper .friday .friday-schedule,
+.schedule-wrapper .saturday .saturday-schedule,
+.schedule-wrapper .sunday .sunday-schedule{
+    width: 100%;
+    background-color: #fb6362;
+    border-radius: 3px;
+}
+
+.schedule-wrapper .monday .monday-schedule {
+    height: 48px;
+}
+
+.schedule-wrapper .tuesday .tuesday-schedule {
+    height: 60px;
+}
+
+.schedule-wrapper .wednesday .wednesday-schedule {
+    height: 122px;
+}
+
+.schedule-wrapper .thursday .thursday-schedule {
+    height: 160px;
+}
+
+.schedule-wrapper .friday .friday-schedule {
+    height: 129px;
+}
+
+.schedule-wrapper .saturday .saturday-schedule {
+    height: 170px;
+}
+
+.schedule-wrapper .sunday .sunday-schedule {
+    height: 140px;
+}
+
+.schedule-wrapper .upper-count {
+    width: 56px;
+    height: 29px;
+    background-color: #404a58;
+    margin-bottom: 14px;
+    color: white;
+    text-align: center;
+    position: relative;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.schedule-wrapper .upper-count:before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 21px;
+    bottom: -7px;
+    border-style: solid;
+    border-width: 7px 7px 0 7px;
+    border-color: #404a58 transparent transparent transparent;
+}
+
+.schedule-wrapper .upper-count span {
+    margin: auto;
+}
+

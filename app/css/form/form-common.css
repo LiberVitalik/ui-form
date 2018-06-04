@@ -1,7 +1,8 @@
 .calendar-wrapper,
 .booking-wrapper,
 .places-wrapper,
-.comment-wrapper {
+.comment-wrapper,
+.schedule-wrapper {
     font-family: GothamProRegular, sans-serif;
     margin: 2% auto;
     overflow: hidden;
@@ -49,4 +50,8 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.hide {
+    display: none;
 }
