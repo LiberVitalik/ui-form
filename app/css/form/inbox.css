@@ -1,0 +1,124 @@
+.inbox-wrapper {
+    width: 345px;
+}
+
+.inbox-wrapper header {
+    width: 100%;
+    height: 73px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background: #404a58;
+    position: relative;
+}
+
+.inbox-wrapper header .rect {
+    width: 20px;
+    height: 20px;
+    background: url("../../img/rect.png") 50% 50% no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.inbox-wrapper header .avatar {
+    width: 50px;
+    height: 50px;
+    margin: 0 20px 0 13px;
+    position: relative;
+}
+
+.inbox-wrapper header .avatar .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fb6362;
+    position: absolute;
+    top: 4px;
+    right: 1px;
+}
+
+.inbox-wrapper header img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.inbox-wrapper header span {
+    max-width: 200px;
+    min-height: 18px;
+}
+
+.inbox-wrapper .form-submit {
+    margin: 30px auto;
+}
+
+.inbox-wrapper .form-submit {
+    margin: 30px auto;
+}
+
+.inbox-wrapper .form-submit img {
+    margin-right: 10px;
+}
+
+.inbox-wrapper aside {
+    margin-bottom: 10px;
+}
+
+.inbox-wrapper aside ul li {
+    height: 47px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.inbox-wrapper aside ul li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+}
+
+.inbox-wrapper aside ul li a span {
+    max-width: 200px;
+    font-size: 14px;
+}
+
+.inbox-wrapper aside ul li a .count {
+    width: 35px;
+    height: 27px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+}
+
+.inbox-wrapper aside ul li a img {
+    margin: 0 16px 0 25px;
+}
+
+.inbox-wrapper aside ul li a:hover {
+    border-left: 4px solid #FB6362;
+    background: #f1f1f1;
+}
+
+.inbox-wrapper aside ul li a:hover img {
+    margin: 0 16px 0 21px;
+}
+
+.inbox-wrapper aside ul li a:hover .count {
+    background: #FB6362;
+}
+

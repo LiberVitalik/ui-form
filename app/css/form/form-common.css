@@ -2,21 +2,14 @@
 .booking-wrapper,
 .places-wrapper,
 .comment-wrapper,
-.schedule-wrapper {
+.schedule-wrapper,
+.inbox-wrapper {
     font-family: GothamProRegular, sans-serif;
     margin: 2% auto;
     overflow: hidden;
     border: 1px solid #afafaf;
     box-shadow: 0 0 21px rgba(0, 0, 0, 0.45);
     border-radius: 5px;
-}
-
-.color-coral {
-    color: #FB6362;
-}
-
-.color-grey {
-    color: #c5c5c5;
 }
 
 .flex-vertical-align {
@@ -53,5 +46,13 @@
 }
 
 .hide {
-    display: none;
+    display: none !important;
+}
+
+.color-coral {
+    color: #FB6362;
+}
+
+.color-grey {
+    color: #c5c5c5;
 }
