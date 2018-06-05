@@ -5,6 +5,10 @@
     font-size: 12px;
     position: relative;
     color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 10px;
 }
 
 .schedule-wrapper .schedule {
@@ -13,17 +17,6 @@
     top: 0;
     left: 103px;
     display: flex;
-}
-
-.schedule-wrapper span {
-    display: block;
-    padding: 51px 0 4px 40px;
-}
-
-.schedule-wrapper hr {
-    width: 705px;
-    margin: 0 auto;
-    border: 1px solid #eaeaea;
 }
 
 .schedule-wrapper .monday,

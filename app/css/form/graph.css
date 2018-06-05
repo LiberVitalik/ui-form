@@ -1,0 +1,176 @@
+.graph-wrapper {
+    width: 791px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.graph-wrapper nav {
+    width: 707px;
+    height: 75px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+
+.graph-wrapper nav li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.graph-wrapper nav li button {
+    padding: 7px 14px;
+    border-radius: 20px;
+    max-width: 150px;
+    overflow: hidden;
+    border: none;
+    background: white;
+    font-family: GothamProRegular, sans-serif;
+    font-size: 17px;
+    color: #666;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.graph-wrapper nav li button:hover {
+    background: #404a58;
+    color: white;
+}
+
+.graph-wrapper .schedule-number-container {
+    position: relative;
+    margin: 0 auto;
+}
+
+.graph-wrapper .schedule-number-container .schedule-back,
+.graph-wrapper .schedule-number-container .schedule-front {
+    position: absolute;
+    bottom: 13px;
+    right: 0;
+}
+
+.graph-wrapper .schedule-number-container .droplet-run,
+.graph-wrapper .schedule-number-container .droplet-walk {
+    width: 29px;
+    height: 39px;
+    position: absolute;
+}
+
+
+.graph-wrapper .schedule-number-container .droplet-run {
+    bottom: 158px;
+    left: 415px;
+}
+
+.graph-wrapper .schedule-number-container .droplet-walk {
+    bottom: 85px;
+    left: 83px;
+}
+
+.graph-wrapper .schedule-number-container .droplet-run span,
+.graph-wrapper .schedule-number-container .droplet-walk span {
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: GothamProMedium, sans-serif;
+    font-size: 14px;
+    max-width: 18px;
+    overflow: hidden;
+}
+
+.graph-wrapper .schedule-markers {
+    width: 707px;
+    display: flex;
+    margin: 0 auto 44px;
+}
+
+.graph-wrapper .schedule-markers .schedule-markers-run,
+.graph-wrapper .schedule-markers .schedule-markers-walk {
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+}
+
+.graph-wrapper .schedule-markers .dot {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.graph-wrapper .schedule-markers .schedule-markers-run .dot {
+    background: #fb6362;
+}
+
+.graph-wrapper .schedule-markers .schedule-markers-walk .dot {
+    background: #b54645;
+}
+
+.graph-wrapper .schedule-markers .schedule-markers-run span,
+.graph-wrapper .schedule-markers .schedule-markers-walk span {
+    font-family: GothamProMedium, sans-serif;
+    font-size: 12px;
+    color: #666;
+}
+
+.graph-wrapper .schedule-number-container .schedule-number:nth-of-type(4) {
+    margin-bottom: 15px;
+}
+
+.graph-wrapper .graph-range-wrap {
+    background: #f4f4f4;
+    border-top: 1px solid #dfe1e0;
+}
+
+.graph-wrapper .graph-range-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.graph-wrapper .graph-range-container .graph-range-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.graph-wrapper .graph-range-container .graph-range {
+    width: 145px;
+    height: 145px;
+}
+
+.graph-wrapper .graph-range-container .graph-circle-bg {
+    fill: none;
+    stroke: #e6e6e6;
+    stroke-width: 0.5;
+}
+
+.graph-wrapper .graph-range-container .graph-circle {
+    fill: none;
+    stroke-width: 1;
+    stroke-linecap: round;
+}
+
+.graph-wrapper .graph-range-container .graph-range.dark .graph-circle {
+    stroke: #404a58;
+}
+
+.graph-wrapper .graph-range-container .caption {
+    fill: #666;
+    font-family: GothamProLight, sans-serif;
+    font-size: 6px;
+    text-anchor: middle;
+}
+
+.graph-wrapper .graph-range-container .description {
+    font-family: GothamProMedium, sans-serif;
+    font-size: 14px;
+    color: #666;
+    text-transform: capitalize;
+    max-width: 150px;
+    margin-top: 10px;
+    text-decoration: none;
+}

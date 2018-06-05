@@ -234,15 +234,24 @@
         </form>
     </section>
     <section class="schedule-wrapper">
-        <span>40</span>
-        <hr>
-        <span>30</span>
-        <hr>
-        <span>20</span>
-        <hr>
-        <span>0</span>
-        <hr>
-
+        <div class="schedule-number-container">
+            <div class="schedule-number">
+                <span>40</span>
+                <hr>
+            </div>
+            <div class="schedule-number">
+                <span>30</span>
+                <hr>
+            </div>
+            <div class="schedule-number">
+                <span>20</span>
+                <hr>
+            </div>
+            <div class="schedule-number">
+                <span>0</span>
+                <hr>
+            </div>
+        </div>
         <div class="schedule">
             <div class="monday">
                 <span>Mon</span>
@@ -321,25 +330,147 @@
                     <a href="#">
                         <img src="img/inbox-icon-1.png" alt="icon">
                         <span class="clip">Inbox</span>
-                        <span class="count">3</span>
+                        <span class="count clip">3</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <img src="img/inbox-icon-1.png" alt="icon">
                         <span class="clip">Starred</span>
-                        <span class="count hide"></span>
+                        <span class="count clip hide"></span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <img src="img/inbox-icon-1.png" alt="icon">
                         <span class="clip">Sent Mail</span>
-                        <span class="count">12</span>
+                        <span class="count clip">12</span>
                     </a>
                 </li>
             </ul>
         </aside>
+    </section>
+    <section class="graph-wrapper">
+        <nav>
+            <li>
+                <button type="button">Day</button>
+            </li>
+            <li>
+                <button type="button">Week</button>
+            </li>
+            <li>
+                <button type="button">Month</button>
+            </li>
+        </nav>
+        <div class="schedule-number-container">
+            <div class="schedule-number">
+                <span>40</span>
+                <hr>
+            </div>
+            <div class="schedule-number">
+                <span>30</span>
+                <hr>
+            </div>
+            <div class="schedule-number">
+                <span>20</span>
+                <hr>
+            </div>
+            <div class="schedule-number">
+                <span>0</span>
+                <hr>
+            </div>
+
+            <figure class="schedule-back">
+                <img src="img/graph-back.png" alt="graph">
+            </figure>
+            <figure class="schedule-front">
+                <img src="img/graph-front.png" alt="graph">
+            </figure>
+            <div class="droplet-run">
+                <img src="img/marker-run.png" alt="run">
+                <span>29</span>
+            </div>
+            <div class="droplet-walk">
+                <img src="img/marker-walk.png" alt="walk">
+                <span>18</span>
+            </div>
+        </div>
+        <div class="schedule-markers">
+            <div class="schedule-markers-run">
+                <div class="dot"></div>
+                <span class="clip">Running</span>
+            </div>
+            <div class="schedule-markers-walk">
+                <div class="dot"></div>
+                <span class="clip">Walking</span>
+            </div>
+        </div>
+        <div class="graph-range-wrap">
+            <div class="graph-range-container">
+                <!--Performance-->
+                <div class="graph-range-item">
+                    <div class="graph-range">
+                        <svg viewbox="0 0 36 36" class="graph-range dark">
+                            <path class="graph-circle-bg"
+                                  d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <path class="graph-circle"
+                                  stroke-dasharray="20, 100"
+                                  d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <text x="18" y="20.35" class="caption">30%</text>
+                        </svg>
+                    </div>
+                    <a href="#" class="description clip">Performance</a>
+                </div>
+
+                <!--Time-->
+                <div class="graph-range-item">
+                    <div class="graph-range">
+                        <svg viewbox="0 0 36 36" class="graph-range dark">
+                            <path class="graph-circle-bg"
+                                  d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <path class="graph-circle"
+                                  stroke-dasharray="75, 100"
+                                  d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <text x="18" y="20.35" class="caption">24min</text>
+                        </svg>
+                    </div>
+                    <a href="#" class="description clip">Time</a>
+                </div>
+
+                <!--Distance-->
+                <div class="graph-range-item">
+                    <div class="graph-range">
+                        <svg viewbox="0 0 36 36" class="graph-range dark">
+                            <path class="graph-circle-bg"
+                                  d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <path class="graph-circle"
+                                  stroke-dasharray="32, 100"
+                                  d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <text x="18" y="20.35" class="caption">58km</text>
+                        </svg>
+                    </div>
+                    <a href="#" class="description clip">Distance</a>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>
