@@ -1,0 +1,97 @@
+.follow-wrapper {
+    width: 361px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0 25px;
+}
+
+.follow-wrapper .follow-avatar {
+    max-width: 146px;
+    max-height: 146px;
+    border-radius: 50%;
+    margin: 0 auto 22px;
+    position: relative;
+}
+
+.follow-wrapper .follow-avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.follow-wrapper figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.follow-wrapper figcaption .location {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.follow-wrapper figcaption .location img {
+    margin-right: 7px;
+}
+
+.follow-wrapper figcaption .name {
+    font-family: GothamProMedium, sans-serif;
+    max-width: 280px;
+    font-size: 21px;
+    color: #4d4d4d;
+    margin-bottom: 7px;
+}
+
+.follow-wrapper figcaption .location span {
+    font-family: GothamProLight, sans-serif;
+    max-width: 250px;
+    font-size: 14px;
+    color: #999;
+}
+
+.follow-wrapper .follow-container .followers {
+    margin-right: 22px;
+}
+
+.follow-wrapper .follow-container,
+.follow-wrapper .follow-container .followers,
+.follow-wrapper .follow-container .following {
+    display: flex;
+    font-family: GothamProLight, sans-serif;
+    font-size: 14px;
+}
+
+.follow-wrapper .follow-container .followers span,
+.follow-wrapper .follow-container .following span {
+    max-width: 85px;
+}
+
+.follow-wrapper .follow-container .followers .count,
+.follow-wrapper .follow-container .following .count {
+    color: #b4b4b4;
+}
+
+.follow-wrapper .follow-container .followers span:last-child,
+.follow-wrapper .follow-container .following span:last-child {
+    color: #4d4d4d;
+}
+
+.follow-wrapper .follow-container {
+    margin-bottom: 60px;
+}
+
+.follow-wrapper .follow-container .form-submit {
+    margin-bottom: 25px;
+}
+
+.follow-wrapper .follow-avatar .dot {
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background: #fb6362;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}

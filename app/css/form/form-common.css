@@ -4,7 +4,8 @@
 .comment-wrapper,
 .schedule-wrapper,
 .inbox-wrapper,
-.graph-wrapper {
+.graph-wrapper,
+.follow-wrapper {
     font-family: GothamProRegular, sans-serif;
     margin: 2% auto;
     overflow: hidden;
