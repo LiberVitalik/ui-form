@@ -140,6 +140,15 @@
 .graph-wrapper .graph-range-container .graph-range {
     width: 145px;
     height: 145px;
+    cursor: pointer;
+}
+
+.graph-wrapper .graph-range-container .graph-range:hover .graph-range.color .graph-circle {
+    stroke: #FB6362;
+}
+
+.graph-wrapper .graph-range-container .graph-range:hover .graph-circle {
+    stroke-width: 1.5;
 }
 
 .graph-wrapper .graph-range-container .graph-circle-bg {
@@ -154,7 +163,7 @@
     stroke-linecap: round;
 }
 
-.graph-wrapper .graph-range-container .graph-range.dark .graph-circle {
+.graph-wrapper .graph-range-container .graph-range.color .graph-circle {
     stroke: #404a58;
 }
 

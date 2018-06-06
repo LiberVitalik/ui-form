@@ -5,7 +5,8 @@
 .schedule-wrapper,
 .inbox-wrapper,
 .graph-wrapper,
-.follow-wrapper {
+.follow-wrapper,
+.nav-wrapper {
     font-family: GothamProRegular, sans-serif;
     margin: 2% auto;
     overflow: hidden;

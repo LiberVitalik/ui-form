@@ -70,6 +70,7 @@
 .follow-wrapper .follow-container .followers .count,
 .follow-wrapper .follow-container .following .count {
     color: #b4b4b4;
+    margin-right: 5px;
 }
 
 .follow-wrapper .follow-container .followers span:last-child,
