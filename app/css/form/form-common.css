@@ -1,15 +1,6 @@
-.calendar-wrapper,
-.booking-wrapper,
-.places-wrapper,
-.comment-wrapper,
-.schedule-wrapper,
-.inbox-wrapper,
-.graph-wrapper,
-.follow-wrapper,
-.nav-wrapper {
+.widget {
     font-family: GothamProRegular, sans-serif;
     margin: 2% auto;
-    overflow: hidden;
     border: 1px solid #afafaf;
     box-shadow: 0 0 21px rgba(0, 0, 0, 0.45);
     border-radius: 5px;
@@ -41,25 +32,13 @@
     box-shadow: inset 0 0 60px rgba(0, 0, 0, .25);
 }
 
-.schedule-number-container .schedule-number {
+.flex-center {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 52px;
+    justify-content: center;
+    align-items: center;
 }
 
-.schedule-number-container {
-    margin-bottom: 10px;
-}
-
-.schedule-number-container span {
-    display: block;
-    padding-bottom: 4px;
-    font-family: GothamProMedium, sans-serif;
-    font-size: 12px;
-    color: #666;
-}
-
-.schedule-number-container hr {
+hr {
     width: 705px;
     margin: 0 auto;
     border: 1px solid #eaeaea;
@@ -82,4 +61,17 @@
 
 .color-grey {
     color: #c5c5c5;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.color-run {
+    color: #fb6362;
+}
+
+.color-walk {
+    color: #b54645;
 }

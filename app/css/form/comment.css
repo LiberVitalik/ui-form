@@ -24,8 +24,7 @@
     resize: none;
 }
 
-.comment-wrapper fieldset input[name='comment-email'],
-.comment-wrapper fieldset input[name='comment-subject'] {
+.comment-wrapper fieldset input:first-child {
     height: 45px;
 }
 
@@ -37,12 +36,12 @@
     display: none;
 }
 
-.comment-wrapper label[for='comment-file'] {
+.comment-wrapper .comment-file {
     background: url("../../img/clip.png") 50% 50% no-repeat;
 }
 
 .comment-wrapper fieldset input[name='add-email'],
-.comment-wrapper label[for='comment-file'] {
+.comment-wrapper .comment-file {
     width: 37px;
     height: 37px;
     cursor: pointer;

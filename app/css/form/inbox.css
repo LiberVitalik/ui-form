@@ -16,6 +16,7 @@
     width: 20px;
     height: 20px;
     background: url("../../img/rect.png") 50% 50% no-repeat;
+    border: none;
     position: absolute;
     top: 50%;
     right: 15px;
@@ -56,11 +57,11 @@
     margin: 30px auto;
 }
 
-.inbox-wrapper .form-submit {
-    margin: 30px auto;
-}
-
-.inbox-wrapper .form-submit img {
+.inbox-wrapper .form-submit span:before {
+    content: '\e907';
+    font-family: widget-font-icon;
+    display: inline-block;
+    font-size: 23px;
     margin-right: 10px;
 }
 
@@ -84,9 +85,14 @@
     position: relative;
 }
 
+.inbox-wrapper aside ul li a i {
+    color: #999;
+}
+
 .inbox-wrapper aside ul li a span {
     max-width: 200px;
     font-size: 14px;
+    color: #666;
 }
 
 .inbox-wrapper aside ul li a .count {
@@ -103,7 +109,7 @@
     color: white;
 }
 
-.inbox-wrapper aside ul li a img {
+.inbox-wrapper aside ul li a i {
     margin: 0 16px 0 25px;
 }
 
@@ -112,7 +118,7 @@
     background: #f1f1f1;
 }
 
-.inbox-wrapper aside ul li a:hover img {
+.inbox-wrapper aside ul li a:hover i {
     margin: 0 16px 0 21px;
 }
 

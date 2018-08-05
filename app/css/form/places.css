@@ -10,16 +10,13 @@
     background: #404a58;
 }
 
-.places-wrapper nav ul li:first-child a {
-    background: url("../../img/eye.png") 50% 50% no-repeat;
-}
-
-.places-wrapper nav ul li:nth-of-type(2) a {
-    background: url("../../img/location.png") 50% 50% no-repeat;
-}
-
-.places-wrapper nav ul li:last-child a {
-    background: url("../../img/favorite.png") 50% 50% no-repeat;
+.places-wrapper nav a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
 }
 
 .places-wrapper nav ul li {
@@ -27,11 +24,6 @@
     height: 113px;
     box-sizing: border-box;
     cursor: pointer;
-}
-
-.places-wrapper nav ul li a {
-    display: block;
-    height: 100%;
 }
 
 .places-wrapper nav ul li:hover {
@@ -48,6 +40,21 @@
     color: #4d4d4d;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.places-wrapper .content:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 22px 0 22px 24px;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    top: 35px;
+    right: -24px;
+    z-index: 1;
 }
 
 .places-wrapper .content h1 {
@@ -80,6 +87,7 @@
     font-size: 15px;
     color: #404a58;
 }
+
 .places-wrapper .content a {
     display: block;
     color: #fb6362;
@@ -98,17 +106,6 @@
     position: relative;
 }
 
-.places-wrapper .place-info .rectangle {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 22px 0 22px 24px;
-    border-color: transparent transparent transparent #fff;
-    position: absolute;
-    top: 35px;
-    left: 0;
-}
-
 .places-wrapper .place-info .place-info-control {
     height: 43px;
     display: flex;
@@ -118,20 +115,18 @@
     color: white;
 }
 
-.places-wrapper .place-info .place-info-control .comments,
-.places-wrapper .place-info .place-info-control .likes {
+.places-wrapper .place-info .place-info-control .comments-likes {
     max-width: 120px;
     height: 26px;
     display: flex;
     align-items: center;
-}
-
-.places-wrapper .place-info .place-info-control .likes {
-    margin-left: 17px;
-}
-
-.places-wrapper .place-info .place-info-control .comments img,
-.places-wrapper .place-info .place-info-control .likes img {
-    margin-right: 10px;
     cursor: pointer;
+}
+
+.places-wrapper .comments-likes i {
+    margin-right: 10px;
+}
+
+.places-wrapper .place-info .place-info-control .comments-likes:last-child {
+    margin-left: 17px;
 }

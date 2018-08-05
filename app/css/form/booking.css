@@ -51,7 +51,29 @@
     margin-bottom: 8px;
 }
 
-.booking-wrapper .booking-container input,
+.booking-container input[type="date"]::-webkit-calendar-picker-indicator {
+    color: transparent;
+    opacity: 1;
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+    cursor: pointer;
+    background: url("../../img/calendar.png") 50% 50% no-repeat;
+}
+
+.booking-container input[type="date"] {
+    font-family: GothamProLight, sans-serif;
+    font-size: 14px;
+    color: #999898;
+}
+
+.booking-container input[type=date]::-webkit-inner-spin-button {
+    display: none;
+}
+
+.booking-container input[type="date"],
 .booking-wrapper .booking-container select {
     max-width: 295px;
     height: 45px;
@@ -62,25 +84,7 @@
     font-size: 14px;
     border: 0;
     box-shadow: inset -1px 1px 3px rgba(38, 27, 33, 0.25);
-}
-
-.booking-wrapper .booking-container .check-in::placeholder,
-.booking-wrapper .booking-container .check-out::placeholder {
-    font-family: GothamProLight, sans-serif;
-    font-size: 14px;
-    color: #999898;
-}
-
-.booking-wrapper .booking-container .date-booking .check-calendar {
-    display: block;
-    width: 37px;
-    height: 37px;
-    position: absolute;
-    right: 4px;
-    bottom: 4px;
-    border: none;
-    cursor: pointer;
-    background: url("../../img/calendar.png") 50% 50% no-repeat;
+    position: relative;
 }
 
 .flexible-date-wrapper {
@@ -97,9 +101,13 @@
     display: none;
 }
 
-.flexible-date-wrapper label:before {
+.flexible-date-wrapper span:before {
     content: '';
     display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
     width: 22px;
     height: 22px;
     margin-right: 12px;
@@ -110,19 +118,11 @@
 .flexible-date-wrapper label span {
     max-width: 250px;
     font-size: 14px;
+    margin-left: 37px;
 }
 
-.flexible-date-wrapper label img {
-    width: 16px;
-    height: 11px;
-    position: absolute;
-    top: 6px;
-    left: 3px;
-    display: none;
-}
-
-.flexible-date-wrapper input[type='checkbox']:checked + img  {
-    display: block;
+.flexible-date-wrapper input[type='checkbox']:checked + span:before  {
+    background: url("../../img/mark.png") 50% 50% no-repeat;
 }
 
 .booking-container .people-count {
@@ -144,6 +144,15 @@
     font-size: 14px;
 }
 
-.booking-container .form-submit img {
+.booking-container .form-submit span {
+    display: flex;
+    align-items: center;
+}
+
+.booking-container .form-submit span:before {
+    content: '\e90b';
+    font-family: widget-font-icon;
+    color: #fff;
+    font-size: 22px;
     margin-right: 10px;
 }

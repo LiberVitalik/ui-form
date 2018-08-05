@@ -1,11 +1,20 @@
-.graph-wrapper {
-    width: 791px;
+.graph {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    padding: 0;
 }
 
-.graph-wrapper nav {
+.graph .schedule {
+    margin: 0 40px 40px;
+}
+
+.graph .content figure {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.graph nav {
     width: 707px;
     height: 75px;
     display: flex;
@@ -13,13 +22,13 @@
     margin: 0 auto;
 }
 
-.graph-wrapper nav li {
+.graph nav li {
     list-style: none;
     display: flex;
     align-items: center;
 }
 
-.graph-wrapper nav li button {
+.graph nav li button {
     padding: 7px 14px;
     border-radius: 20px;
     max-width: 150px;
@@ -33,148 +42,137 @@
     cursor: pointer;
 }
 
-.graph-wrapper nav li button:hover {
+.graph nav li button:hover {
     background: #404a58;
     color: white;
 }
 
-.graph-wrapper .schedule-number-container {
-    position: relative;
-    margin: 0 auto;
+.graph .content {
+    width: 100%;
+    height: 90%;
 }
 
-.graph-wrapper .schedule-number-container .schedule-back,
-.graph-wrapper .schedule-number-container .schedule-front {
-    position: absolute;
-    bottom: 13px;
-    right: 0;
-}
-
-.graph-wrapper .schedule-number-container .droplet-run,
-.graph-wrapper .schedule-number-container .droplet-walk {
-    width: 29px;
-    height: 39px;
+.graph .droplet {
     position: absolute;
 }
 
+.graph .droplet i {
+    font-size: 39px;
+}
 
-.graph-wrapper .schedule-number-container .droplet-run {
+.graph .droplet.run {
     bottom: 158px;
     left: 415px;
 }
 
-.graph-wrapper .schedule-number-container .droplet-walk {
+.graph .droplet.walk {
     bottom: 85px;
     left: 83px;
 }
 
-.graph-wrapper .schedule-number-container .droplet-run span,
-.graph-wrapper .schedule-number-container .droplet-walk span {
+.graph .droplet span {
     position: absolute;
-    top: 50%;
-    left: 53%;
+    top: 42%;
+    left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-family: GothamProMedium, sans-serif;
     font-size: 14px;
     max-width: 18px;
     overflow: hidden;
 }
 
-.graph-wrapper .schedule-markers {
-    width: 707px;
+.graph .info {
     display: flex;
-    margin: 0 auto 44px;
+    margin-left: 44px;
 }
 
-.graph-wrapper .schedule-markers .schedule-markers-run,
-.graph-wrapper .schedule-markers .schedule-markers-walk {
+.graph .info span {
+    display: flex;
+    width: auto;
+}
+
+.graph .markers {
     display: flex;
     align-items: center;
     margin-right: 12px;
+    font-family: GothamProMedium, sans-serif;
+    font-size: 12px;
+    color: #666;
 }
 
-.graph-wrapper .schedule-markers .dot {
+.graph .markers span:before {
+    content: '';
+    display: block;
     width: 13px;
     height: 13px;
     border-radius: 50%;
     margin-right: 8px;
 }
 
-.graph-wrapper .schedule-markers .schedule-markers-run .dot {
+.graph .markers-run span:before {
     background: #fb6362;
 }
 
-.graph-wrapper .schedule-markers .schedule-markers-walk .dot {
+.graph .markers-walk span:before {
     background: #b54645;
 }
 
-.graph-wrapper .schedule-markers .schedule-markers-run span,
-.graph-wrapper .schedule-markers .schedule-markers-walk span {
-    font-family: GothamProMedium, sans-serif;
-    font-size: 12px;
-    color: #666;
-}
-
-.graph-wrapper .schedule-number-container .schedule-number:nth-of-type(4) {
-    margin-bottom: 15px;
-}
-
-.graph-wrapper .graph-range-wrap {
+.graph .graph-range-wrap {
+    width: 100%;
     background: #f4f4f4;
     border-top: 1px solid #dfe1e0;
 }
 
-.graph-wrapper .graph-range-container {
+.graph .graph-range-container {
     display: flex;
     justify-content: space-evenly;
 }
 
-.graph-wrapper .graph-range-container .graph-range-item {
+.graph .graph-range-container .graph-range-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 40px 0;
 }
 
-.graph-wrapper .graph-range-container .graph-range {
+.graph .graph-range-container .graph-range {
     width: 145px;
     height: 145px;
     cursor: pointer;
 }
 
-.graph-wrapper .graph-range-container .graph-range:hover .graph-range.color .graph-circle {
+.graph .graph-range-container .graph-range:hover .graph-range.color .graph-circle {
     stroke: #FB6362;
 }
 
-.graph-wrapper .graph-range-container .graph-range:hover .graph-circle {
+.graph .graph-range-container .graph-range:hover .graph-circle {
     stroke-width: 1.5;
 }
 
-.graph-wrapper .graph-range-container .graph-circle-bg {
+.graph .graph-range-container .graph-circle-bg {
     fill: none;
     stroke: #e6e6e6;
     stroke-width: 0.5;
 }
 
-.graph-wrapper .graph-range-container .graph-circle {
+.graph .graph-range-container .graph-circle {
     fill: none;
     stroke-width: 1;
     stroke-linecap: round;
 }
 
-.graph-wrapper .graph-range-container .graph-range.color .graph-circle {
+.graph .graph-range-container .graph-range.color .graph-circle {
     stroke: #404a58;
 }
 
-.graph-wrapper .graph-range-container .caption {
+.graph .graph-range-container .caption {
     fill: #666;
     font-family: GothamProLight, sans-serif;
     font-size: 6px;
     text-anchor: middle;
 }
 
-.graph-wrapper .graph-range-container .description {
+.graph .graph-range-container .description {
     font-family: GothamProMedium, sans-serif;
     font-size: 14px;
     color: #666;

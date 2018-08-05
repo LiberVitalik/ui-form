@@ -13,7 +13,7 @@
     list-style: none;
 }
 
-.nav-wrapper nav li a{
+.nav-wrapper nav li a {
     width: 100%;
     height: 100%;
     display: flex;
@@ -30,51 +30,22 @@
     color: white;
 }
 
-.nav-wrapper .location-snippet,
-.nav-wrapper .comment-snippet,
-.nav-wrapper .eye-snippet,
-.nav-wrapper .like-snippet {
-    background-position: top;
-    background-repeat: no-repeat;
+.nav-wrapper i {
+    color: #404a58;
+    font-size: 20px;
     margin-right: 10px;
 }
 
-.nav-wrapper nav li a:hover .location-snippet,
-.nav-wrapper nav li a:hover .comment-snippet,
-.nav-wrapper nav li a:hover .eye-snippet,
-.nav-wrapper nav li a:hover .like-snippet {
-    background-position: bottom;
+.nav-wrapper i.icon-locate {
+    font-size: 24px;
 }
 
-.nav-wrapper nav li a .nav-info-wrapper,
-.nav-wrapper nav li a .nav-info-wrapper,
-.nav-wrapper nav li a .nav-info-wrapper,
-.nav-wrapper nav li a .nav-info-wrapper {
+.nav-wrapper nav li a:hover i {
+    color: #fff;
+}
+
+.nav-wrapper .nav-info-wrapper {
     position: relative;
-}
-
-.nav-wrapper .location-snippet {
-    width: 18px;
-    height: 26px;
-    background: url("../../img/location-snippet.png");
-}
-
-.nav-wrapper .comment-snippet {
-    width: 27px;
-    height: 22px;
-    background: url("../../img/comment-snippet.png");
-}
-
-.nav-wrapper .eye-snippet {
-    width: 27px;
-    height: 17px;
-    background: url("../../img/eye-snippet.png");
-}
-
-.nav-wrapper .like-snippet {
-    width: 25px;
-    height: 22px;
-    background: url("../../img/like-snippet.png");
 }
 
 .nav-wrapper .nav-info-wrapper span {
