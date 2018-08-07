@@ -75,3 +75,9 @@ hr {
 .color-walk {
     color: #b54645;
 }
+
+.clearfix:after {
+    content:" ";
+    display:table;
+    clear:both;
+}

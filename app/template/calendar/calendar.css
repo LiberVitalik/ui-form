@@ -1,6 +1,6 @@
 .calendar-wrapper {
     width: 345px;
-    height: 425px;
+    padding-bottom: 35px;
 }
 
 .calendar-wrapper .month {

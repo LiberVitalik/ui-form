@@ -12,9 +12,7 @@
     margin-bottom: 25px;
 }
 
-.comment-wrapper fieldset input[name='comment-email'],
-.comment-wrapper fieldset input[name='comment-subject'],
-.comment-wrapper fieldset textarea[name='comment-message'] {
+.comment-wrapper fieldset .comment-field {
     width: 327px;
     padding: 0 40px 0 15px;
     background: #f4f4f4;
@@ -56,9 +54,7 @@
     padding-top: 12px;
 }
 
-.comment-wrapper fieldset input[name='comment-email']::placeholder,
-.comment-wrapper fieldset input[name='comment-subject']::placeholder,
-.comment-wrapper fieldset textarea[name='comment-message']::placeholder {
+.comment-wrapper fieldset .comment-field::placeholder {
     font-family: GothamProLight, sans-serif;
     color: #999;
     font-size: 14px;
@@ -72,7 +68,5 @@
 .comment-wrapper fieldset .form-submit {
     width: 127px;
     height: 47px;
-    position: absolute;
-    top: 0;
-    right: 0;
+    float: right;
 }
