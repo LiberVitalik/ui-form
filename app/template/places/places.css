@@ -129,3 +129,28 @@
 .places-wrapper .place-info .place-info-control .comments-likes:last-child {
     margin-left: 17px;
 }
+
+@media (max-width: 800px) {
+    .places-wrapper {
+        width: 363px;
+        flex-direction: column;
+    }
+
+    .places-wrapper nav ul {
+        flex-direction: row;
+    }
+
+    .places-wrapper nav ul li {
+        width: 33%;
+        height: 71px;
+        box-sizing: border-box;
+    }
+
+    .places-wrapper nav ul li:not(:last-of-type) {
+        border-right: 1px solid black;
+    }
+
+    .places-wrapper .content:after {
+        display: none;
+    }
+}

@@ -1,9 +1,9 @@
 @import "../template/form-common/form-common.css";
+@import "../template/form-common/chedule-graph.css";
 @import "../template/calendar/calendar.css";
 @import "../template/booking/booking.css";
 @import "../template/places/places.css";
 @import "../template/comment/comment.css";
-@import "../template/schedule/schedule.css";
 @import "../template/inbox/inbox.css";
 @import "../template/graph/graph.css";
 @import "../template/follow/follow.css";

@@ -1,5 +1,5 @@
 .schedule-graph-wrapper {
-    width: 790px;
+    max-width: 790px;
     font-family: GothamProMedium, Arial, sans-serif;
     font-size: 12px;
     color: #666;
@@ -104,4 +104,3 @@
 .schedule .upper-count span {
     margin: auto;
 }
-
