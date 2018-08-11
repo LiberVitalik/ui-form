@@ -55,26 +55,22 @@
 }
 
 .follow-wrapper .follow-container,
-.follow-wrapper .follow-container .followers,
-.follow-wrapper .follow-container .following {
+.follow-wrapper .follow-container .follow-info {
     display: flex;
     font-family: GothamProLight, sans-serif;
     font-size: 14px;
 }
 
-.follow-wrapper .follow-container .followers span,
-.follow-wrapper .follow-container .following span {
+.follow-wrapper .follow-container .follow-info span {
     max-width: 85px;
 }
 
-.follow-wrapper .follow-container .followers .count,
-.follow-wrapper .follow-container .following .count {
+.follow-wrapper .follow-container .follow-info .count {
     color: #b4b4b4;
     margin-right: 5px;
 }
 
-.follow-wrapper .follow-container .followers span:last-child,
-.follow-wrapper .follow-container .following span:last-child {
+.follow-wrapper .follow-container .follow-info span:last-child {
     color: #4d4d4d;
 }
 
