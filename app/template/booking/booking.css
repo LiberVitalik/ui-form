@@ -1,0 +1,158 @@
+.booking-wrapper {
+    width: 345px;
+}
+
+.booking-wrapper .location-info-wrapper {
+    height: 180px;
+    background-image: url("../../img/bgLocation.png");
+    display: flex;
+    align-items: flex-end;
+    opacity: 0.9;
+}
+
+.booking-wrapper .location-info-wrapper .location-info {
+    max-width: 300px;
+    height: 70px;
+    padding-left: 16px;
+    color: white;
+}
+
+.booking-wrapper .location-info-wrapper .location-info h4 {
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+.booking-wrapper .location-info-wrapper .location-info span {
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.booking-wrapper .location-info-wrapper .location-info img {
+    padding-left: 2px;
+}
+
+.booking-wrapper .booking-container {
+    padding: 25px;
+    color: #666;
+}
+
+.booking-wrapper .booking-container .date-booking,
+.booking-wrapper .booking-container .date-booking label {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-wrapper .booking-container .date-booking {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.booking-wrapper .booking-container .date-booking label span {
+    margin-bottom: 8px;
+}
+
+.booking-container input[type="date"]::-webkit-calendar-picker-indicator {
+    color: transparent;
+    opacity: 1;
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+    cursor: pointer;
+    background: url("../../img/calendar.png") 50% 50% no-repeat;
+}
+
+.booking-container input[type="date"] {
+    font-family: GothamProLight, sans-serif;
+    font-size: 14px;
+    color: #999898;
+}
+
+.booking-container input[type=date]::-webkit-inner-spin-button {
+    display: none;
+}
+
+.booking-container input[type="date"],
+.booking-wrapper .booking-container select {
+    max-width: 295px;
+    height: 45px;
+    border-radius: 3px;
+    padding-left: 12px;
+    padding-right: 55px;
+    font-family: GothamProRegular, Arial, sans-serif;
+    font-size: 14px;
+    border: 0;
+    box-shadow: inset -1px 1px 3px rgba(38, 27, 33, 0.25);
+    position: relative;
+}
+
+.flexible-date-wrapper {
+    margin-bottom: 27px;
+}
+
+.flexible-date-wrapper label {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.flexible-date-wrapper label input[type='checkbox'] {
+    display: none;
+}
+
+.flexible-date-wrapper span:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    margin-right: 12px;
+    box-shadow: inset -1px 1px 3px rgba(38, 27, 33, 0.25);
+    cursor: pointer;
+}
+
+.flexible-date-wrapper label span {
+    max-width: 250px;
+    font-size: 14px;
+    margin-left: 37px;
+}
+
+.flexible-date-wrapper input[type='checkbox']:checked + span:before  {
+    background: url("../../img/mark.png") 50% 50% no-repeat;
+}
+
+.booking-container .people-count {
+    display: flex;
+}
+
+.booking-container .people-count select {
+    width: 137px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    background: url("../../img/rectangle.png") 96px 50% no-repeat;
+}
+
+.booking-container .people-count .date-booking:first-child {
+    margin-right: 19px;
+}
+
+.booking-container .people-count .date-booking span {
+    font-size: 14px;
+}
+
+.booking-container .form-submit span {
+    display: flex;
+    align-items: center;
+}
+
+.booking-container .form-submit span:before {
+    content: '\e90b';
+    font-family: widget-font-icon;
+    color: #fff;
+    font-size: 22px;
+    margin-right: 10px;
+}

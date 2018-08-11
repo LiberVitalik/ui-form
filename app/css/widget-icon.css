@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'widget-font-icon';
+    src:  url('../fonts/widget-icon/widget-font-icon.eot?39iwd9');
+    src:  url('../fonts/widget-icon/widget-font-icon.eot?39iwd9#iefix') format('embedded-opentype'),
+      url('../fonts/widget-icon/widget-font-icon.ttf?39iwd9') format('truetype'),
+      url('../fonts/widget-icon/widget-font-icon.woff?39iwd9') format('woff'),
+      url('../fonts/widget-icon/widget-font-icon.svg?39iwd9#widget-font-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+i {
+    font-family: 'widget-font-icon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tear:before {
+    content: "\e90e";
+}
+.icon-like:before {
+    content: "\e90d";
+}
+.icon-clip:before {
+    content: "\e900";
+}
+.icon-comment:before {
+    content: "\e901";
+}
+.icon-eye:before {
+    content: "\e902";
+}
+.icon-inbox:before {
+    content: "\e903";
+}
+.icon-locate:before {
+    content: "\e904";
+}
+.icon-mail:before {
+    content: "\e905";
+}
+.icon-next:before {
+    content: "\e906";
+}
+.icon-note:before {
+    content: "\e907";
+}
+.icon-plus:before {
+    content: "\e908";
+}
+.icon-prev:before {
+    content: "\e909";
+}
+.icon-rect:before {
+    content: "\e90a";
+}
+.icon-search:before {
+    content: "\e90b";
+}
+.icon-star:before {
+    content: "\e90c";
+}

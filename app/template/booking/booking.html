@@ -1,0 +1,74 @@
+<!--BOOKING FORM-->
+
+<div class="widget booking-wrapper">
+    <header class="location-info-wrapper">
+        <div class="location-info">
+            <h4 class="clip">Hotel Relais</h4>
+
+            <div class="flex-vertical-align">
+                <img src="img/location.png" alt="location">
+                <span class="clip">Paris, France</span>
+            </div>
+        </div>
+    </header>
+    <form action="POST" novalidate
+          name="booking-form"
+          class="booking-container">
+        <div class="date-booking">
+            <label>
+                <span class="clip">Check in</span>
+                <input type="date"
+                       value="2016-07-09"
+                       name="check-in"
+                       class="check-in">
+            </label>
+        </div>
+        <div class="date-booking">
+            <label>
+                <span class="clip">Check out</span>
+                <input type="date"
+                       value="2016-07-16"
+                       name="check-out"
+                       class="check-out">
+            </label>
+        </div>
+        <div class="flexible-date-wrapper">
+            <label for="flexible-date">
+                <input type="checkbox"
+                       id="flexible-date"
+                       name="flexible-date"
+                       checked>
+                <span class="clip">
+                        Flexible dates
+                </span>
+            </label>
+        </div>
+        <div class="people-count">
+            <div class="date-booking">
+                <label for="adults">
+                    <span class="clip">Adults</span>
+                    <select name="adults" id="adults">
+                        <option value="1">1</option>
+                        <option value="2" selected>2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </label>
+            </div>
+            <div class="date-booking">
+                <label for="children">
+                    <span class="clip">Children</span>
+                    <select name="adults" id="children">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+        <button type="submit" class="form-submit">
+            <span>search rooms</span>
+        </button>
+    </form>
+</div>

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ui form</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/widget-icon.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!--CALENDAR FORM-->
+
+<div class="widget calendar-wrapper">
+    <header class="month">
+        <button class="prev">
+            <i class="icon-prev"></i>
+        </button>
+
+        <h1 class="clip">May 2014</h1>
+
+        <button class="next">
+            <i class="icon-next"></i>
+        </button>
+    </header>
+
+    <main class="calendar">
+        <!-- DAYS -->
+        <div class="days">
+            <span>Sun</span>
+            <span>Mon</span>
+            <span>Tue</span>
+            <span>Wed</span>
+            <span>Thu</span>
+            <span>Fri</span>
+            <span>Sut</span>
+        </div>
+
+        <!-- DAY NUMBERS -->
+        <div>
+            <span class="color-disable">29</span>
+            <span class="color-disable">30</span>
+            <span>1</span>
+            <span>2</span>
+            <span class="color-disable">3</span>
+            <span>4</span>
+            <span>5</span>
+        </div>
+        <div>
+            <span>6</span>
+            <span class="color-brand-light">7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>10</span>
+            <span>11</span>
+            <span>12</span>
+        </div>
+        <div>
+            <span>13</span>
+            <span>14</span>
+            <span>15</span>
+            <span>16</span>
+            <span>17</span>
+            <span>18</span>
+            <span>19</span>
+        </div>
+        <div>
+            <span>20</span>
+            <span>21</span>
+            <span>22</span>
+            <span class="color-brand-light">23</span>
+            <span>24</span>
+            <span>25</span>
+            <span>26</span>
+        </div>
+        <div>
+            <span>27</span>
+            <span>28</span>
+            <span>29</span>
+            <span>30</span>
+            <span class="color-disable">1</span>
+            <span class="color-disable">2</span>
+            <span class="color-disable">3</span>
+        </div>
+        <button type="submit" class="form-submit clip">Add event</button>
+    </main>
+</div>
+<!--BOOKING FORM-->
+
+<div class="widget booking-wrapper">
+    <header class="location-info-wrapper">
+        <div class="location-info">
+            <h4 class="clip">Hotel Relais</h4>
+
+            <div class="flex-vertical-align">
+                <img src="img/location.png" alt="location">
+                <span class="clip">Paris, France</span>
+            </div>
+        </div>
+    </header>
+    <form action="POST" novalidate
+          name="booking-form"
+          class="booking-container">
+        <div class="date-booking">
+            <label>
+                <span class="clip">Check in</span>
+                <input type="date"
+                       value="2016-07-09"
+                       name="check-in"
+                       class="check-in">
+            </label>
+        </div>
+        <div class="date-booking">
+            <label>
+                <span class="clip">Check out</span>
+                <input type="date"
+                       value="2016-07-16"
+                       name="check-out"
+                       class="check-out">
+            </label>
+        </div>
+        <div class="flexible-date-wrapper">
+            <label for="flexible-date">
+                <input type="checkbox"
+                       id="flexible-date"
+                       name="flexible-date"
+                       checked>
+                <span class="clip">
+                        Flexible dates
+                </span>
+            </label>
+        </div>
+        <div class="people-count">
+            <div class="date-booking">
+                <label for="adults">
+                    <span class="clip">Adults</span>
+                    <select name="adults" id="adults">
+                        <option value="1">1</option>
+                        <option value="2" selected>2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </label>
+            </div>
+            <div class="date-booking">
+                <label for="children">
+                    <span class="clip">Children</span>
+                    <select name="adults" id="children">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+        <button type="submit" class="form-submit">
+            <span>search rooms</span>
+        </button>
+    </form>
+</div>
+<div class="widget places-wrapper">
+    <nav>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="icon-eye"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon-locate"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon-star"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <article class="content">
+        <h1>My most favourite place in the world</h1>
+        <div class="reviews clip">
+            <span>154</span>Reviews
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Maecenas a pulvinar ipsum. Aliquam sit amet iaculis dolor. Vivamus sed diam
+            sollicitudin.
+        </p>
+        <a href="#" class="clip">Read more</a>
+    </article>
+    <figure class="place-info">
+        <img src="img/sea.png" alt="sea">
+        <div class="place-info-control">
+            <div class="comments-likes">
+                <i class="icon-comment"></i>
+                <span class="clip">752</span>
+            </div>
+            <div class="comments-likes">
+                <i class="icon-like"></i>
+                <span class="clip">2709</span>
+            </div>
+        </div>
+    </figure>
+</div>
+<div class="widget comment-wrapper">
+    <form action="POST" novalidate
+          name="comment-form">
+        <fieldset>
+            <input type="email" class="comment-field" name="comment-email" required
+                   placeholder="Email">
+            <input type="button" name="add-email">
+        </fieldset>
+        <fieldset>
+            <input type="text" class="comment-field" name="comment-subject" placeholder="Subject">
+            <label class="comment-file">
+                <input type="file" id="comment-file" name="comment-file">
+            </label>
+        </fieldset>
+        <fieldset>
+                <textarea class="comment-field"
+                          name="comment-message"
+                          id="comment-message"
+                          placeholder="Message"></textarea>
+        </fieldset>
+        <fieldset class="clearfix">
+            <button type="submit" class="form-submit clip">Send</button>
+        </fieldset>
+    </form>
+</div>
+
+<div class="widget schedule-graph-wrapper">
+    <div class="schedule">
+        <div class="scale">
+            <div class="numbers flex-column">
+                <span>40</span>
+                <span>30</span>
+                <span>20</span>
+                <span>0</span>
+            </div>
+            <div class="info">
+                <span>Mon</span>
+                <span>Tues</span>
+                <span>Wed</span>
+                <span>Thu</span>
+                <span>Fri</span>
+                <span>Sat</span>
+                <span>Sun</span>
+            </div>
+        </div>
+        <div class="axis flex-column">
+            <hr>
+            <hr>
+            <hr>
+            <hr>
+        </div>
+        <div class="content">
+            <div class="days">
+                <div class="day" style="height: 48px"></div>
+                <div class="rectangle"></div>
+                <div class="upper-count">
+                    <span>17</span>
+                </div>
+            </div>
+            <div class="days">
+                <div class="day" style="height: 60px"></div>
+                <div class="upper-count hide">
+                    <span></span>
+                </div>
+            </div>
+            <div class="days">
+                <div class="day" style="height: 122px"></div>
+                <div class="upper-count hide">
+                    <span></span>
+                </div>
+            </div>
+            <div class="days">
+                <div class="day" style="height: 160px"></div>
+                <div class="upper-count hide">
+                    <span></span>
+                </div>
+            </div>
+            <div class="days">
+                <div class="day" style="height: 129px"></div>
+                <div class="upper-count hide">
+                    <span></span>
+                </div>
+            </div>
+            <div class="days">
+                <div class="day" style="height: 170px"></div>
+                <div class="upper-count">
+                    <span>34</span>
+                </div>
+            </div>
+            <div class="days">
+                <div class="day" style="height: 140px"></div>
+                <div class="upper-count hide">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="widget inbox-wrapper">
+    <header>
+        <div class="avatar">
+            <img src="img/avatar.png" alt="user-photo">
+            <div class="dot"></div>
+        </div>
+        <span class="name clip">Diego Buchanan</span>
+        <button class="rect flex-center"></button>
+    </header>
+    <button type="submit" class="form-submit">
+        <span class="flex-center">compose</span>
+    </button>
+    <aside>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="icon-inbox"></i>
+                    <span class="clip">Inbox</span>
+                    <span class="count clip">3</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon-star"></i>
+                    <span class="clip">Starred</span>
+                    <span class="count clip hide"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon-mail"></i>
+                    <span class="clip">Sent Mail</span>
+                    <span class="count clip">12</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+</div>
+<div class="widget schedule-graph-wrapper graph">
+    <nav>
+        <li>
+            <button type="button">Day</button>
+        </li>
+        <li>
+            <button type="button">Week</button>
+        </li>
+        <li>
+            <button type="button">Month</button>
+        </li>
+    </nav>
+    <div class="schedule">
+        <div class="scale">
+            <div class="numbers flex-column">
+                <span>40</span>
+                <span>30</span>
+                <span>20</span>
+                <span>0</span>
+            </div>
+            <div class="info">
+                <div class="markers markers-run">
+                    <span class="clip">Running</span>
+                </div>
+                <div class="markers markers-walk">
+                    <span class="clip">Walking</span>
+                </div>
+            </div>
+        </div>
+        <div class="axis flex-column">
+            <hr>
+            <hr>
+            <hr>
+            <hr>
+        </div>
+        <div class="content">
+            <figure class="schedule-back">
+                <img src="img/graph-back.png" alt="graph">
+            </figure>
+            <figure class="schedule-front">
+                <img src="img/graph-front.png" alt="graph">
+            </figure>
+            <div class="droplet run">
+                <i class="icon-tear color-run"></i>
+                <span>29</span>
+            </div>
+            <div class="droplet walk">
+                <i class="icon-tear color-walk"></i>
+                <span>18</span>
+            </div>
+        </div>
+    </div>
+    <div class="graph-range-wrap">
+        <div class="graph-range-container">
+            <!--Performance-->
+            <div class="graph-range-item">
+                <div class="graph-range">
+                    <svg viewbox="0 0 36 36" class="graph-range color">
+                        <path class="graph-circle-bg"
+                              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <path class="graph-circle"
+                              stroke-dasharray="20, 100"
+                              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <text x="18" y="20.35" class="caption">30%</text>
+                    </svg>
+                </div>
+                <a href="#" class="description clip">Performance</a>
+            </div>
+
+            <!--Time-->
+            <div class="graph-range-item">
+                <div class="graph-range">
+                    <svg viewbox="0 0 36 36" class="graph-range color">
+                        <path class="graph-circle-bg"
+                              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <path class="graph-circle"
+                              stroke-dasharray="75, 100"
+                              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <text x="18" y="20.35" class="caption">24min</text>
+                    </svg>
+                </div>
+                <a href="#" class="description clip">Time</a>
+            </div>
+
+            <!--Distance-->
+            <div class="graph-range-item">
+                <div class="graph-range">
+                    <svg viewbox="0 0 36 36" class="graph-range color">
+                        <path class="graph-circle-bg"
+                              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <path class="graph-circle"
+                              stroke-dasharray="32, 100"
+                              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <text x="18" y="20.35" class="caption">58km</text>
+                    </svg>
+                </div>
+                <a href="#" class="description clip">Distance</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="widget follow-wrapper">
+    <figure>
+        <div class="follow-avatar">
+            <img src="img/avatar.png" alt="avatar">
+            <div class="dot"></div>
+        </div>
+        <figcaption>
+            <span class="name clip">Diego Buchanan</span>
+            <div class="location">
+                <img src="img/location-dark.png" alt="location">
+                <span class="clip">London, UK</span>
+            </div>
+        </figcaption>
+    </figure>
+    <div class="follow-container">
+        <div class="followers follow-info">
+            <span class="count clip">348</span>
+            <span class="clip">Followers</span>
+        </div>
+        <div class="following follow-info">
+            <span class="count clip">16</span>
+            <span class="clip">Following</span>
+        </div>
+    </div>
+    <button type="submit" class="form-submit clip">follow</button>
+</div>
+<div class="widget nav-wrapper">
+    <nav>
+        <li>
+            <a href="#">
+                <i class="icon-locate"></i>
+                <span class="nav-info-wrapper">
+                    <span class="clip">Location</span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="icon-comment"></i>
+                <span class="nav-info-wrapper">
+                    <span class="clip">Comments</span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="icon-eye"></i>
+                <span class="nav-info-wrapper">
+                    <span class="clip">Views</span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="icon-like"></i>
+                <span class="nav-info-wrapper">
+                    <span class="clip">Likes</span>
+                    <span class="likes-count">2</span>
+                </span>
+            </a>
+        </li>
+    </nav>
+</div>
+
+</body>
+</html>

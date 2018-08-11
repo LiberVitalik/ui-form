@@ -1,0 +1,25 @@
+<div class="widget comment-wrapper">
+    <form action="POST" novalidate
+          name="comment-form">
+        <fieldset>
+            <input type="email" class="comment-field" name="comment-email" required
+                   placeholder="Email">
+            <input type="button" name="add-email">
+        </fieldset>
+        <fieldset>
+            <input type="text" class="comment-field" name="comment-subject" placeholder="Subject">
+            <label class="comment-file">
+                <input type="file" id="comment-file" name="comment-file">
+            </label>
+        </fieldset>
+        <fieldset>
+                <textarea class="comment-field"
+                          name="comment-message"
+                          id="comment-message"
+                          placeholder="Message"></textarea>
+        </fieldset>
+        <fieldset class="clearfix">
+            <button type="submit" class="form-submit clip">Send</button>
+        </fieldset>
+    </form>
+</div>

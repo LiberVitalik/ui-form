@@ -1,0 +1,81 @@
+.nav-wrapper {
+    width: 792px;
+}
+
+.nav-wrapper nav {
+    display: flex;
+}
+
+.nav-wrapper nav li {
+    min-width: 198px;
+    max-width: 198px;
+    height: 90px;
+    list-style: none;
+}
+
+.nav-wrapper nav li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    text-decoration: none;
+    color: #999;
+    text-transform: capitalize;
+}
+
+.nav-wrapper nav li a:hover {
+    background: #404a58;
+    color: white;
+}
+
+.nav-wrapper i {
+    color: #404a58;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.nav-wrapper i.icon-locate {
+    font-size: 24px;
+}
+
+.nav-wrapper nav li a:hover i {
+    color: #fff;
+}
+
+.nav-wrapper .nav-info-wrapper {
+    position: relative;
+}
+
+.nav-wrapper .nav-info-wrapper span {
+    max-width: 100px;
+}
+
+.nav-wrapper .likes-count {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    right: -20px;
+    background: #fb6362;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: GothamProMedium, sans-serif;
+    font-size: 13px;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .nav-wrapper {
+        width: 363px;
+    }
+
+    .nav-wrapper nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

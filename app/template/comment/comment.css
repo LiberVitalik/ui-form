@@ -1,0 +1,72 @@
+.comment-wrapper {
+    max-width: 377px;
+}
+
+.comment-wrapper form {
+    width: 330px;
+    padding: 25px 25px 0 25px;
+}
+
+.comment-wrapper fieldset {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.comment-wrapper fieldset .comment-field {
+    width: 327px;
+    padding: 0 40px 0 15px;
+    background: #f4f4f4;
+    border: none;
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    resize: none;
+}
+
+.comment-wrapper fieldset input:first-child {
+    height: 45px;
+}
+
+.comment-wrapper fieldset input[name='add-email'] {
+    background: url("../../img/addMail.png") 50% 50% no-repeat;
+}
+
+.comment-wrapper fieldset input[name='comment-file'] {
+    display: none;
+}
+
+.comment-wrapper .comment-file {
+    background: url("../../img/clip.png") 50% 50% no-repeat;
+}
+
+.comment-wrapper fieldset input[name='add-email'],
+.comment-wrapper .comment-file {
+    width: 37px;
+    height: 37px;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 4px;
+    right: 5px;
+}
+
+.comment-wrapper fieldset textarea[name='comment-message'] {
+    height: 222px;
+    padding-top: 12px;
+}
+
+.comment-wrapper fieldset .comment-field::placeholder {
+    font-family: GothamProLight, sans-serif;
+    color: #999;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.comment-wrapper fieldset:last-child {
+    height: 47px;
+}
+
+.comment-wrapper fieldset .form-submit {
+    width: 127px;
+    height: 47px;
+    float: right;
+}
